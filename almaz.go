@@ -5,7 +5,7 @@ import "fmt"
 // this is a comment
 
 func main() {
-    fmt.Println("Hello World:")
+    fmt.Println("Сюда ты можешь внести свои циферки и какие-нибудь знаки:")
     var first int
     var sec int
     
