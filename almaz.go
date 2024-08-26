@@ -11,6 +11,6 @@ func main() {
     var sec int
     var oper string
     fmt.Scan(&first, &oper, &sec)
-    fmt.Print(&oper)
+    fmt.Println(&oper)
      
 }
