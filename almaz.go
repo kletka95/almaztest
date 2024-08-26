@@ -9,7 +9,7 @@ import (
 func main() {
     var first int
     var sec int
-    var oper string
+    var oper int
     fmt.Scan(&first, &oper, &sec)
     fmt.Println(oper)
      
