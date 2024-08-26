@@ -6,7 +6,8 @@ func main() {
 	fmt.Print("Введите любое число")
 	var first int
 	var second int
-	fmt.Scanln(&first, &second)
-	
-	fmt.Print(first)
+	var thrid int
+	fmt.Scanln(&first, $thrid, &second)
+	var reulst int
+	fmt.Print()
 }
