@@ -1,7 +1,7 @@
 package main
 
-import "fmt"
-import "math"
+import ("fmt"
+        "math")
 
 // this is a comment
 
