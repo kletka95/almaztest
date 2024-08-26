@@ -8,9 +8,8 @@ func main() {
     var first int
     var sec int
     var operator string
-    fmt.Scan(&first, &operator, &sec)
-    
-    switch operator {
+
+switch operator {
     case "+":
         result = add(a, b)
     case "-":
@@ -24,7 +23,9 @@ func main() {
         return
     }
 
-    fmt.Printf("Результат: %.2f\n", result)
+    
+    fmt.Scan(&first, &operator, &sec)
+    
   
 
 }
