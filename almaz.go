@@ -9,8 +9,13 @@ import (
 func main() {
     var first int
     var sec int
-    fmt.Scan(&first, &sec)
-    fmt.Println()
-    fmt.Println(first+sec)
+    var oper string
+        switch oper {
+                case "+":
+                        fmt.Println(first+sec)
+                case "*":
+                        fmt.Println(first*sec)
+                
+                }
 
 }
