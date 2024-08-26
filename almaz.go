@@ -16,7 +16,6 @@ func main() {
                         fmt.Println(first+sec)
                 case "*":
                         fmt.Println(first*sec)
-                
                 }
-     fmt.Println()
+     
 }
