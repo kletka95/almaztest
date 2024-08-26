@@ -3,5 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Print("Hello world")
+	fmt.Print("Введите любое число")
+	var first string
+	fmt.Scanln(&first)
+	fmt.Print(first)
 }
