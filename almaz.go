@@ -7,7 +7,7 @@ func main() {
 	var first int
 	var second int
 	var thrid int
-	var ss = fmt.Scanln(&first, $thrid, &second)
+	var ss = fmt.Scanln(&first, &thrid, &second)
 	 
 	fmt.Print(ss)
 }
