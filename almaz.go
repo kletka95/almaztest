@@ -34,8 +34,6 @@ func getInput() (float64, float64, string) {
     fmt.Print("Введите второе число: ")
     fmt.Scanln(&b)
 
-    fmt.Print("Введите оператор (+, -, *, /): ")
-    fmt.Scanln(&operator)
 
     return a, b, operator
 }
