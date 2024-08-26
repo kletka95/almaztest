@@ -18,6 +18,13 @@ func main() {
             case "*":
                 fmt.Println(first*sec)    
                 }
+            case "/":
+                fmt.Println(first/sec)    
+                }  
+            
+            case "-":
+                fmt.Println(first-sec)    
+                }    
     fmt.Println(&oper)
      
 }
