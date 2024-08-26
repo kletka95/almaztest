@@ -8,9 +8,9 @@ import (
 
 func main() {
     var first int
-    var sec int
+    var sec string
     var oper int
-    fmt.Scan(&first, &sec)
+    fmt.Scan(&first,&oper,&sec)
     fmt.Println(oper)
      
 }
