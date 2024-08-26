@@ -10,7 +10,7 @@ func main() {
     var first int
     var sec int
     var oper string
-    fmt.Scan(&first,&oper,&sec)
+    fmt.Scan(&first&oper&sec)
     fmt.Print(&oper)
      
 }
