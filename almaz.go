@@ -1,6 +1,7 @@
 package main
 
 import "fmt"
+import "math"
 
 // this is a comment
 
@@ -10,6 +11,6 @@ func main() {
     var sec int
     
     fmt.Scan(&first, &sec)
-    fmt.Println()
+    fmt.Println(first+sec)
     
 }
