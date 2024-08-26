@@ -8,7 +8,5 @@ func main() {
 	var second int
 	
 	var fmt.Scanln(&first, &second)
-	
-	
-	fmt.Print(first + second)
+	fmt.Println(first + second)
 }
