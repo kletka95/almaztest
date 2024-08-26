@@ -5,10 +5,10 @@ import "fmt"
 
 
 func main() {
+    var first int
     var sec int
-
-    fmt.Scan(&first, &sec)
+    fmt.Scan(&first, &operator, &sec)
     fmt.Println()
-    fmt.Println(first+sec)
+  
 
 }
