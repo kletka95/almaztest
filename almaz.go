@@ -1,15 +1,21 @@
-package main
-
-import ("fmt")
-
-// this is a comment
-
 func main() {
-    fmt.Println("Сюда ты можешь внести свои циферки и какие-нибудь знаки:")
-    var first int
-    var sec int
-    
-    fmt.Scan(&first, &sec)
-    fmt.Println(first*sec)
-    
+    a, b, operator := getInput()
+
+    var result float64
+
+    switch operator {
+    case "+":
+        result = add(a, b)
+    case "-":
+        result = subtract(a, b)
+    case "*":
+        result = multiply(a, b)
+    case "/":
+        result = divide(a, b)
+    default:
+        fmt.Println("Неизвестный оператор")
+        return
+    }
+
+    fmt.Printf("Результат: %.2f\n", result)
 }
