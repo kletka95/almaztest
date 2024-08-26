@@ -9,5 +9,5 @@ func main() {
     var first int
     var sec int
     fmt.Scan(&first, &sec)
-    fmt.Println(first)
+    fmt.Println(first+sec)
 }
