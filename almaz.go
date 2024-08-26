@@ -17,10 +17,10 @@ func main() {
             
             case "*":
                 fmt.Println(first*sec)    
-                }
+                
             case "/":
                 fmt.Println(first/sec)    
-                }  
+                
             
             case "-":
                 fmt.Println(first-sec)    
