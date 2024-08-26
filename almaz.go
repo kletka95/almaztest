@@ -1,9 +1,9 @@
 package main
+
 import "fmt"
+
+// this is a comment
+
 func main() {
-	fmt.Print("Введите любое число")
-	var first int
-	var second int
-	var fmt.Scanln(&first &second)
-	fmt.Println(first)
+    fmt.Println("Hello World")
 }
