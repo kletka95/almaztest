@@ -12,10 +12,10 @@ func main() {
     var oper string
     fmt.Scan(&first, &oper, &sec)
         switch oper{
-            case '+':
+            case "+":
                 fmt.Println(first+sec)
             
-            case '*':
+            case "*":
                 fmt.Println(first*sec)    
                 }
     fmt.Println(&oper)
