@@ -28,8 +28,8 @@ func decimalToRomanRecursive(num int) string {
 func main() {
     var oper string
     var c bool
-    var num int == decimalToRomanRecursive(num)
-    var num2 int == decimalToRomanRecursive(num)
+    var num int = decimalToRomanRecursive(num)
+    var num2 int = decimalToRomanRecursive(num)
     fmt.Println("Введите что-то")
     fmt.Scan(&num, &oper, &num2)
         switch c{
