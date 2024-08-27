@@ -126,8 +126,8 @@ func main() {
  fmt.Println("Ввести")
  text, _ := reader.ReadString('\n')
 
- int a = text[1] - '0'
- int b = text[2] - '0'
+ var a int = text[1] 
+ var b int = text[2] 
  input := text
  result, err := calculate(input)
  if err != nil {
