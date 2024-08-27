@@ -37,8 +37,7 @@ func decimalTooRomanRecursive(num2 int) string {
 
 
 func main() {
-    num2 == var first int
-    num == var sec int 
+   
     var oper string
     fmt.Scan(&num, &oper, &num2)
         switch first{
