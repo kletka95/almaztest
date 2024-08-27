@@ -18,7 +18,7 @@ func main() {
                 fmt.Println("Не больше 10")
                 }
         switch sec{
-                case sec > 10
+                case sec > 10:
                         fmt.Println("Не больше 10")
         switch oper{
             case "+":
