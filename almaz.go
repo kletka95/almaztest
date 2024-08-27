@@ -16,12 +16,10 @@ func main() {
     fmt.Scan(&first, &oper, &sec)
         switch c{
             case first > 10:
-                break
+                fmt.Println("Stop")
             case sec > 10:
-                break
-
-                }
-        switch oper{
+                fmt.Println("Stop")
+             defauilt: switch oper{
             case "+":
                 fmt.Println(first+sec)
             
@@ -36,6 +34,8 @@ func main() {
                 
                 fmt.Println(first-sec)    
                 }    
-    fmt.Println(&oper)
+                }
+        
+
      
 }
