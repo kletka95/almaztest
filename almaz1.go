@@ -135,9 +135,9 @@ var d bool
  input := text
  result, err := calculate(input)
  switch d{
-     case i > 10:
+     case i < 10:
         fmt.Println("NO")
-     case c > 10: 
+     case c < 10: 
         fmt.Println("NO2")
      default:  if err != nil {
          fmt.Println("Error:", err)
