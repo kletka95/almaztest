@@ -7,9 +7,6 @@ import (
  "bufio"
 )
 
-import (
- "fmt"
-)
 
 func containsAnyLetters(s string, letters []rune) bool {
  for _, r := range s {
