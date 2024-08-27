@@ -22,7 +22,7 @@ func decimalToRomanRecursive(num int) string {
 	return ""
 }
 func main() {
-	num := 354
+	num := 2+2
     fmt.Printf("Decimal: %d\n", num)
     roman := decimalToRomanRecursive(num)
 	fmt.Printf("Roman: %s\n", roman)
