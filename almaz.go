@@ -37,10 +37,10 @@ func decimalTooRomanRecursive(num2 int) string {
 
 
 func main() {
-    var first int
-    var sec int
+    num2 == var first int
+    num == var sec int 
     var oper string
-    fmt.Scan(&num1, &oper, &num2)
+    fmt.Scan(&num, &oper, &num2)
         switch first{
              case first > 10:
                 fmt.Println("Не больше 10")
