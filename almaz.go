@@ -29,7 +29,7 @@ func decimalTooRomanRecursive(num2 int) string {
 	}
 	for _, pair := range romanMap {
     	if num2 >= pair.decVal {
-            return pair.symbol + decimalToRomanRecursive(num-pair.decVal)
+            return pair.symbol + decimalToRomanRecursive(num1-pair.decVal)
         }
     }
 	return ""
@@ -39,18 +39,16 @@ func decimalTooRomanRecursive(num2 int) string {
 func main() {
    
     var oper string
+    var c bool
     fmt.Scan(&num, &oper, &num2)
-        switch first{
+        switch c{
              case first > 10:
                 fmt.Println("Не больше 10")
-                }
-        switch sec{
-                case sec > 10
-                        fmt.Println("Не больше 10")
+             case sec > 10
+                fmt.Println("Не больше 10")
         switch oper{
             case "+":
                 fmt.Println(num+num2)
-           
                 }    
     fmt.Println(&oper)
 
