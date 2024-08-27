@@ -128,5 +128,5 @@ func main() {
   fmt.Println("Error:", err)
   return
  }
- fmt.Println("Result:", result)
+ fmt.Println(input)
 }
