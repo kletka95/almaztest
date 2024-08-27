@@ -49,17 +49,8 @@ func main() {
                         fmt.Println("Не больше 10")
         switch oper{
             case "+":
-                fmt.Println(first+sec)
-            
-            case "*":
-                fmt.Println(first*sec)    
-                
-            case "/":
-                fmt.Println(first/sec)    
-                
-            
-            case "-":
-                fmt.Println(first-sec)    
+                fmt.Println(num+num2)
+           
                 }    
     fmt.Println(&oper)
 
