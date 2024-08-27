@@ -125,6 +125,7 @@ func calculate(input string) (string, error) {
 func main() {
 var i int
 var c int
+var d bool
  reader := bufio.NewReader(os.Stdin)
  fmt.Println("Ввести")
  text, _ := reader.ReadString('\n')
@@ -133,10 +134,17 @@ var c int
  fmt.Sscanf(text2, "%d:%d", &i, &c)
  input := text
  result, err := calculate(input)
- if err != nil {
-  fmt.Println("Error:", err)
-  return
- }
- fmt.Println("Result:", result)
+ switch d{
+     case i > 10:
+        fmt.Println("NO")
+     case c > 10: 
+        fmt.Println("NO2")
+     default:  if err != nil {
+         fmt.Println("Error:", err)
+            return
+         }
+          fmt.Println("Result:", result)
+           }
+
 }
  
