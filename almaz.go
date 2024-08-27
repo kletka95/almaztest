@@ -1,16 +1,23 @@
 package main
 
 import (
-        "fmt")
+        "fmt"
+        "strings"
+)
 
 
-// this is a comment
+
 
 func main() {
     var first int
     var sec int
     var oper string
     fmt.Scan(&first, &oper, &sec)
+        switch first, sec{
+             case > 10:
+                fmt.Println("Не больше 10")
+
+                }
         switch oper{
             case "+":
                 fmt.Println(first+sec)
