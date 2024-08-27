@@ -123,17 +123,16 @@ func calculate(input string) (string, error) {
 }
 
 func main() {
- var text1 int
+
  reader := bufio.NewReader(os.Stdin)
  fmt.Println("Ввести")
  text, _ := reader.ReadString('\n')
- text1 := strconv.Atoi(text)
  input := text
  result, err := calculate(input)
  if err != nil {
   fmt.Println("Error:", err)
   return
  }
- fmt.Println("Result:", result, text, text1)
+ fmt.Println("Result:", result, text)
  
 }
