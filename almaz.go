@@ -33,9 +33,9 @@ func main() {
     fmt.Println("Введите что-то")
     fmt.Scan(&num, &oper, num2)
         switch c{
-             case num > 10:
+             case num < 10:
                 fmt.Println("Не больше 10")
-             case num2 > 10:
+             case num2 < 10:
                 fmt.Println("Не больше 10")
 		}
         switch oper{
