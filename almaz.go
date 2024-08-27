@@ -23,24 +23,15 @@ func decimalToRomanRecursive(num int) string {
 	return ""
 }
 
-func decimalTooRomanRecursive(num2 int) string {
-	if num2 == 0 {
-    	return ""
-	}
-	for _, pair := range romanMap {
-    	if num2 >= pair.decVal {
-            return pair.symbol + decimalToRomanRecursive(num1-pair.decVal)
-        }
-    }
-	return ""
-}
+
 
 
 func main() {
-   
     var oper string
     var c bool
-    fmt.Scan(&num, &oper, &num2)
+    var num int
+    var num2 int
+    fmt.Scan(&num, &oper, num2)
         switch c{
              case first > 10:
                 fmt.Println("Не больше 10")
