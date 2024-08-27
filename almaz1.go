@@ -129,6 +129,7 @@ var c int
  fmt.Println("Ввести")
  text, _ := reader.ReadString('\n')
  text1 := strings.ReplaceAll(text, "+", ":")
+ text1 := strings.ReplaceAll(text, " ", "")
  fmt.Sscanf(text1, "%d+%d", &i, &c)
  input := text
  result, err := calculate(input)
