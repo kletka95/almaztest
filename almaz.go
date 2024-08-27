@@ -26,13 +26,50 @@ func decimalToRomanRecursive(num int) string {
 	return ""
 }
 
+func decimalTooRomanRecursive(num2 int) string {
+	if num2 == 0 {
+    	return ""
+	}
+	for _, pair := range romanMap {
+    	if num2 >= pair.decVal {
+            return pair.symbol + decimalToRomanRecursive(num-pair.decVal)
+        }
+    }
+	return ""
+}
+
 
 func main() {
-	reader := bufio.NewReader(os.Stdin)
-	fmt.Println("Введите что-то")
-	text, _ := reader.ReadString('\n')
-	text = strings.TrimSpace(text)
-	toNumber, _ := strconv.Atoi(text)
-	fmt.Println(toNumber)
+    var first int
+    var sec int
+    var oper string
+    fmt.Scan(&num1, &oper, &num2)
+        switch first{
+             case first > 10:
+                fmt.Println("Не больше 10")
+                }
+        switch sec{
+                case sec > 10
+                        fmt.Println("Не больше 10")
+        switch oper{
+            case "+":
+                fmt.Println(first+sec)
+            
+            case "*":
+                fmt.Println(first*sec)    
+                
+            case "/":
+                fmt.Println(first/sec)    
+                
+            
+            case "-":
+                fmt.Println(first-sec)    
+                }    
+    fmt.Println(&oper)
 
+   num := 2+2
+    fmt.Printf("Decimal: %d\n", num)
+    roman := decimalToRomanRecursive(num)
+	fmt.Printf("Roman: %s\n", roman)
+     
 }
