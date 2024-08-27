@@ -122,7 +122,7 @@ func calculate(input string) (string, error) {
 func main() {
  var a int
  var b int
- var op string
+
  fmt.Scan(&a, &b)
  input := a+b
  result, err := calculate(input)
