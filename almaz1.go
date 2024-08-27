@@ -137,6 +137,6 @@ var c int
   fmt.Println("Error:", err)
   return
  }
- fmt.Println("Result:", result, i, c, text2 )
+ fmt.Println("Result:", result, i, c )
  
 }
