@@ -32,6 +32,7 @@ func main() {
 	fmt.Println("Введите что-то")
 	text, _ := reader.ReadString('\n')
 	text = strings.TrimSpace(text)
-	
+	toNumber, _ := strconv.Atoi(text)
+	fmt.Println(toNumber + 8)
 	
 }
