@@ -127,7 +127,7 @@ func main() {
  fmt.Println("Ввести")
  text, _ := reader.ReadString('\n')
  text1 := strconv.Atoi(text)
- fmt.println(text1)
+ 
  input := text
  result, err := calculate(input)
  if err != nil {
@@ -135,4 +135,5 @@ func main() {
   return
  }
  fmt.Println("Result:", result, text)
+ fmt.println(text1)
 }
