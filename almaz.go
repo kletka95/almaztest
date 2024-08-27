@@ -15,9 +15,9 @@ func main() {
     var c bool
     fmt.Scan(&first, &oper, &sec)
         switch c{
-            case first > 10:
+            case first < 10:
                 fmt.Println("Stop")
-            case sec > 10:
+            case sec < 10:
                 fmt.Println("Stop")
              default: switch oper{
             case "+":
