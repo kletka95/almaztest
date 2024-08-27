@@ -16,9 +16,9 @@ func main() {
     fmt.Scan(&first, &oper, &sec)
         switch c{
             case first > 10:
-                fmt.Println("ture")
+                break
             case sec > 10:
-                fmt.Println("true too")
+                break
 
                 }
         switch oper{
@@ -33,6 +33,7 @@ func main() {
                 
             
             case "-":
+                
                 fmt.Println(first-sec)    
                 }    
     fmt.Println(&oper)
