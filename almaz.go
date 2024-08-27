@@ -63,9 +63,6 @@ func main() {
                 }    
     fmt.Println(&oper)
 
-   num := 2+2
-    fmt.Printf("Decimal: %d\n", num)
-    roman := decimalToRomanRecursive(num)
-	fmt.Printf("Roman: %s\n", roman)
+  
      
 }
