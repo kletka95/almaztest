@@ -1,4 +1,4 @@
-package romanToArabic
+package main
 import (
  "errors"
  "fmt"
