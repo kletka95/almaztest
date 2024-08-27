@@ -28,7 +28,7 @@ func main() {
             100: 'C',
     }
    res := romeToArab["I"] + romeToArab["II"]
-   fmr.Println(romeToArab[res])
+   fmt.Println(romeToArab[res])
     var first int
     var sec int
     var oper string
