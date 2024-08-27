@@ -130,7 +130,7 @@ var c int
  text, _ := reader.ReadString('\n')
  text1 := strings.ReplaceAll(text, "+", ":")
  text2 := strings.ReplaceAll(text1, " ", "")
- fmt.Sscanf(text2, "%d+%d", &i, &c)
+ fmt.Sscanf(text2, "%d:%d", &i, &c)
  input := text
  result, err := calculate(input)
  if err != nil {
