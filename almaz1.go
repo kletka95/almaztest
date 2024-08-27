@@ -3,6 +3,7 @@ import (
  "errors"
  "fmt"
  "strings"
+ "os"
 )
 
 // Функция для перевода римских цифр в арабские
@@ -120,7 +121,10 @@ func calculate(input string) (string, error) {
 }
 
 func main() {
- input := "2 + 2"
+ reader := bufio.NewReader(os.Stdin)
+ fmt.Println("Ввести")
+ text, _ := reader.ReadString('\n')
+ input := text
  result, err := calculate(input)
  if err != nil {
   fmt.Println("Error:", err)
