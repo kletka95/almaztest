@@ -7,6 +7,15 @@ import (
  "bufio"
  
 )
+func containsSpecificLetter(s string, letter rune) bool {
+ for _, r := range s {
+  if r == letter {
+   return false
+  }
+ }
+ return true
+}
+
 
 // Функция для перевода римских цифр в арабские
 func romanToArabic(roman string) (int, error) {
@@ -123,6 +132,7 @@ func calculate(input string) (string, error) {
 }
 
 func main() {
+letter := 'X', 'L', 'V', 'C', 'D'
 var i int
 var c int
 var d bool
@@ -132,7 +142,7 @@ var d bool
  text1 := strings.ReplaceAll(text, "+", ":")
  text2 := strings.ReplaceAll(text1, " ", "")
  fmt.Sscanf(text2, "%d:%d", &i, &c)
- oo := fmt.Sscanf(text)
+ fmt.Sscanf(text, &o)
  input := text
  result, err := calculate(input)
  switch d{
@@ -140,7 +150,8 @@ var d bool
         fmt.Println("NO")
      case c < 11: 
         fmt.Println("NO2")
-     case 
+     case containsSpecificLetter(text, letter):
+        fmt.Println("В строке есть буква")
      
      default:  if err != nil {
          fmt.Println("Error:", err)
