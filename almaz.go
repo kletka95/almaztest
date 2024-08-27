@@ -30,6 +30,7 @@ func main() {
     var c bool
     var num int
     var num2 int
+    fmt.Println("Введите что-то")
     fmt.Scan(&num, &oper, num2)
         switch c{
              case first > 10:
