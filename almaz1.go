@@ -132,8 +132,7 @@ var c int
  text2 := strings.ReplaceAll(text1, " ", "")
  fmt.Sscanf(text2, "%d:%d", &i, &c)
  input := text
- result, err := calculate(input)
-
+ result := calculate(input)
  fmt.Println("Result:", result, i, c )
  
 }
