@@ -152,7 +152,7 @@ var d bool
         fmt.Println("NO")
      case c < 11: 
         fmt.Println("NO2")
-     case containsSpecificLetter(text, letter):
+     case containsSpecificLetter(text, letters):
         fmt.Println("В строке есть буква")
      
      default:  if err != nil {
