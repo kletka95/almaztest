@@ -120,8 +120,9 @@ func calculate(input string) (string, error) {
 }
 
 func main() {
-
- input := fmt.Scanf()
+ input := "X + II"
+ fmt.Println("Ввести что-то")
+ fmt.Scan(&input)
  result, err := calculate(input)
  if err != nil {
   fmt.Println("Error:", err)
