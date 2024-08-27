@@ -128,8 +128,8 @@ var c int
  reader := bufio.NewReader(os.Stdin)
  fmt.Println("Ввести")
  text, _ := reader.ReadString('\n')
- 
- fmt.Sscanf(text, "%d+%d", &i, &c)
+ text1 := strings.ReplaceAll(text, "+", ":")
+ fmt.Sscanf(text1, "%d+%d", &i, &c)
  input := text
  result, err := calculate(input)
  if err != nil {
