@@ -125,6 +125,9 @@ func main() {
  reader := bufio.NewReader(os.Stdin)
  fmt.Println("Ввести")
  text, _ := reader.ReadString('\n')
+
+ int a = text[1] - '0'
+ int b = text[2] - '0'
  input := text
  result, err := calculate(input)
  if err != nil {
