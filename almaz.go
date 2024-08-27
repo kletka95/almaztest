@@ -1,42 +1,19 @@
 package main
 
 import (
-        "fmt"
-       
-)
-
-
-
-
+        "fmt")
 func main() {
+        romeToArab := map[string]int{
 
-    var first int
-    var sec int
-    var oper string
-    var c bool
-    fmt.Scan(&first, &oper, &sec)
-        switch c{
-            case first < 10:
-                fmt.Println("Stop")
-            case sec < 10:
-                fmt.Println("Stop")
-             default: switch oper{
-            case "+":
-                fmt.Println(first+sec)
-            
-            case "*":
-                fmt.Println(first*sec)    
-                
-            case "/":
-                fmt.Println(first/sec)    
-                
-            
-            case "-":
-                
-                fmt.Println(first-sec)    
-                }    
-                }
-        
-
-     
+                "I": 1,
+                "II": 2,
+                "III": 3,
+        }
+        ArabToRome := map[int]string{
+                1: "I",
+                2: "II",
+                3: "III",
+        }
+        res := romeToArab["I"] + romeToArab["II"]
+        fmt.Println(ArabToRome[res])
 }
