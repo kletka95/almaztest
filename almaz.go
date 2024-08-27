@@ -1,10 +1,7 @@
 package main
 import (
 	"fmt"
-	"bufio"
-	"os"
-	"strconv"
-	"strings"
+	
 )
 var romanMap = []struct {
 	decVal int
