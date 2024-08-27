@@ -132,6 +132,7 @@ var d bool
  text1 := strings.ReplaceAll(text, "+", ":")
  text2 := strings.ReplaceAll(text1, " ", "")
  fmt.Sscanf(text2, "%d:%d", &i, &c)
+ oo := fmt.Sscanf(text)
  input := text
  result, err := calculate(input)
  switch d{
@@ -139,6 +140,7 @@ var d bool
         fmt.Println("NO")
      case c < 11: 
         fmt.Println("NO2")
+     case 
      
      default:  if err != nil {
          fmt.Println("Error:", err)
