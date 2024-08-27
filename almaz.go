@@ -25,7 +25,7 @@ func main() {
             5: 'V',
             10: 'X',
             50: 'L',
-            100: 'C'
+            100: 'C',
     }
    res := romeToArab["I"] + romeToArab["II"]
    fmr.Println(romeToArab[res])
