@@ -1,7 +1,6 @@
 package main
 import (
-	"fmt"
-	
+	"fmt"	
 )
 var romanMap = []struct {
 	decVal int
@@ -35,14 +34,12 @@ func main() {
         switch c{
              case first > 10:
                 fmt.Println("Не больше 10")
-             case sec > 10
+             case sec > 10:
                 fmt.Println("Не больше 10")
         switch oper{
-            case "+":
+             case "+":
                 fmt.Println(num+num2)
                 }    
     fmt.Println(&oper)
-
-  
      
 }
