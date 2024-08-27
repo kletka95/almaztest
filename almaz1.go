@@ -120,11 +120,7 @@ func calculate(input string) (string, error) {
 }
 
 func main() {
- var ss string
- fmt.Println("Ввести")
- 
- fmt.Scan(&ss)
- input := ss
+ input := "2 + 2"
  result, err := calculate(input)
  if err != nil {
   fmt.Println("Error:", err)
