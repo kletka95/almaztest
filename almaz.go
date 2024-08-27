@@ -34,5 +34,5 @@ func main() {
 	text = strings.TrimSpace(text)
 	toNumber, _ := strconv.Atoi(text)
 	fmt.Println(toNumber)
-	
+
 }
