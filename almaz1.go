@@ -132,7 +132,7 @@ func calculate(input string) (string, error) {
 }
 
 func main() {
-letter := 'X', 'L', 'V', 'C', 'D'
+letter := ['X', 'L', 'V', 'C', 'D']
 var i int
 var c int
 var d bool
