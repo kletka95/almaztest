@@ -28,6 +28,6 @@ func decimalToRomanRecursive(num int) string {
 
 
 func main() {
-	
-	
+	reader := bufio.NewReader(os.Stdin)
+	fmt.Println("Введите что-то")	
 }
