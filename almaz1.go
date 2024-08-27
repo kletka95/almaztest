@@ -128,13 +128,13 @@ var i int
  fmt.Println("Ввести")
  text, _ := reader.ReadString('\n')
  
- fmt.Sscanf(text, "%20d", &i)
+ fmt.Sscanf(text, "%d%d", &i, &c)
  input := text
  result, err := calculate(input)
  if err != nil {
   fmt.Println("Error:", err)
   return
  }
- fmt.Println("Result:", result, i )
+ fmt.Println("Result:", result, i, c )
  
 }
