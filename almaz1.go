@@ -133,6 +133,10 @@ var c int
  fmt.Sscanf(text2, "%d:%d", &i, &c)
  input := text
  result := calculate(input)
- fmt.Println("Result:", result, i, c )
- 
+ if err != nil {
+  fmt.Println("Error:", err)
+  return
+ }
+ fmt.Println("Result:", result)
 }
+ 
