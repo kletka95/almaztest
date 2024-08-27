@@ -14,11 +14,11 @@ func main() {
     var oper string
     fmt.Scan(&first, &oper, &sec)
         switch first{
-             case  > 10:
+             case  &first > 10:
                 fmt.Println("Не больше 10")
                 }
         switch sec{
-            case  > 10:
+            case  &sec > 10:
                 fmt.Println("Не больше 10")
                 }
         switch oper{
