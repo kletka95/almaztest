@@ -19,7 +19,7 @@ func main() {
                 fmt.Println("Stop")
             case sec > 10:
                 fmt.Println("Stop")
-             defauilt: switch oper{
+             default: switch oper{
             case "+":
                 fmt.Println(first+sec)
             
