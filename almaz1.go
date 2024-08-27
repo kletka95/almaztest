@@ -142,7 +142,6 @@ var d bool
  text1 := strings.ReplaceAll(text, "+", ":")
  text2 := strings.ReplaceAll(text1, " ", "")
  fmt.Sscanf(text2, "%d:%d", &i, &c)
- fmt.Sscanf(text)
  input := text
  result, err := calculate(input)
  switch d{
