@@ -5,12 +5,18 @@ import (
  "strings"
  "os"
  "bufio"
- 
 )
-func containsSpecificLetter(s string, letter rune) bool {
+
+import (
+ "fmt"
+)
+
+func containsAnyLetters(s string, letters []rune) bool {
  for _, r := range s {
-  if r == letter {
-   return false
+  for _, letter := range letters {
+   if r == letter {
+    return false
+   }
   }
  }
  return true
@@ -132,7 +138,7 @@ func calculate(input string) (string, error) {
 }
 
 func main() {
-letter := 'X'
+letters := []rune{'x', 'l', 'm', 'c', 'd'}
 var i int
 var c int
 var d bool
