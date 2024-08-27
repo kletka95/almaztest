@@ -127,12 +127,13 @@ func main() {
  reader := bufio.NewReader(os.Stdin)
  fmt.Println("Ввести")
  text, _ := reader.ReadString('\n')
+ i, err := strconv.Atoi(text)
  input := text
  result, err := calculate(input)
  if err != nil {
   fmt.Println("Error:", err)
   return
  }
- fmt.Println("Result:", result, text)
+ fmt.Println("Result:", result, text, i )
  
 }
