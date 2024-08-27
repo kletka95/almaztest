@@ -134,6 +134,6 @@ func main() {
   fmt.Println("Error:", err)
   return
  }
- fmt.Println("Result:", result, text)
- fmt.println(text1)
+ fmt.Println("Result:", result, text, text1)
+ 
 }
