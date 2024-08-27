@@ -129,7 +129,7 @@ var c int
  fmt.Println("Ввести")
  text, _ := reader.ReadString('\n')
  
- fmt.Sscanf(text, "%d%d", &i, &c)
+ fmt.Sscanf(text, "%d+%d", &i, &c)
  input := text
  result, err := calculate(input)
  if err != nil {
