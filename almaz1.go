@@ -5,6 +5,7 @@ import (
  "strings"
  "os"
  "bufio"
+ "strconv"
 )
 
 // Функция для перевода римских цифр в арабские
@@ -125,6 +126,7 @@ func main() {
  reader := bufio.NewReader(os.Stdin)
  fmt.Println("Ввести")
  text, _ := reader.ReadString('\n')
+ text1 := strconv.Atoi(text[0])
  input := text
  result, err := calculate(input)
  if err != nil {
