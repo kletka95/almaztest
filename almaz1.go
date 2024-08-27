@@ -121,7 +121,7 @@ func calculate(input string) (string, error) {
 
 func main() {
 
- input := Scan()
+ input := fmt.Scanf()
  result, err := calculate(input)
  if err != nil {
   fmt.Println("Error:", err)
