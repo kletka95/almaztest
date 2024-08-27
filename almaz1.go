@@ -127,7 +127,7 @@ var i int
  reader := bufio.NewReader(os.Stdin)
  fmt.Println("Ввести")
  text, _ := reader.ReadString('\n')
- fmt.Sscanf(text, "%2d", &i)
+ 
  fmt.Sscanf(text, "%5d", &i)
  input := text
  result, err := calculate(input)
