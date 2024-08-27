@@ -123,7 +123,7 @@ func calculate(input string) (string, error) {
 }
 
 func main() {
-
+var i int
  reader := bufio.NewReader(os.Stdin)
  fmt.Println("Ввести")
  text, _ := reader.ReadString('\n')
