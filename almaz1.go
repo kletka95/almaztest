@@ -127,7 +127,7 @@ func main() {
  reader := bufio.NewReader(os.Stdin)
  fmt.Println("Ввести")
  text, _ := reader.ReadString('\n')
- i, err := strconv.Atoi(text)
+ i, err := strconv.Atoi(text[0])
  input := text
  result, err := calculate(input)
  if err != nil {
