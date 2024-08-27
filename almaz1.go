@@ -135,7 +135,7 @@ func calculate(input string) (string, error) {
 }
 
 func main() {
-letters := []rune{'x', 'l', 'm', 'c', 'd'}
+letters := []rune{'X', 'L', 'M', 'C', 'D'}
 var i int
 var c int
 var d bool
@@ -152,7 +152,7 @@ var d bool
         fmt.Println("NO")
      case c < 11: 
         fmt.Println("NO2")
-     case containsSpecificLetter(text, letters):
+     case containsAnyLetters(text, letters):
         fmt.Println("В строке есть буква")
      
      default:  if err != nil {
