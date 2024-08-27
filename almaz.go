@@ -33,6 +33,6 @@ func main() {
 	text, _ := reader.ReadString('\n')
 	text = strings.TrimSpace(text)
 	toNumber, _ := strconv.Atoi(text)
-	fmt.Println(toNumber + 8)
+	fmt.Println(toNumber)
 	
 }
