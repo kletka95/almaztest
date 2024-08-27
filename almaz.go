@@ -1,6 +1,10 @@
 package main
 import (
 	"fmt"
+	"bufio"
+	"os"
+	"strconv"
+	"strings"
 )
 var romanMap = []struct {
 	decVal int
@@ -22,8 +26,13 @@ func decimalToRomanRecursive(num int) string {
 	return ""
 }
 func main() {
-	num := 2+2
-    fmt.Printf("Decimal: %d\n", num)
-    roman := decimalToRomanRecursive(num)
-	fmt.Printf("Roman: %s\n", roman)
+	reader := bufio.NewReader(os.Stdin)
+	for{
+	fmt.Println("Введите что-то")
+	text, _ :=  reader.ReadString()
+	text = strings.TrimSpace(text)
+	toNumber, _ := strconv.Atoi(text)
+	fmt.Println(toNumber+8)
+	}
+	
 }
