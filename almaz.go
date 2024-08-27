@@ -41,6 +41,13 @@ func main() {
         switch oper{
              case "+":
                 fmt.Println(num+num2)
+	   case "*":
+                fmt.Println(num*num2)    
+            case "/":
+                fmt.Println(num/num2)    
+                
+            case "-":
+                fmt.Println(num-num2)    
                 }    
     fmt.Println(&oper)
      
