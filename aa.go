@@ -60,14 +60,27 @@ func arabicToRoman(arabic int) (string, error) {
   return arabicRoman[arabic], nil
 }
 
+func calulate( a, b int, oper string) (int, error){
+ switch oper {
+         case: "+":
+                 return a+b, nil
+         case: "-":
+                 return a-b, nil
+         case: "*":
+                 return a*b, nil
+         case: "/":
+            if b == 0{
+                    return 0, errors.New("Деление на 0 невозможно")
+                    } else{
+                 return a/b, nil
+                    }
+         default:
+                 0, errors.New("Низвестный оператор")
+
+        }
+
 
 func main() {
  
-  RV, ss := arabicToRoman(1000)
-        if ss != nil{
-             fmt.Println(ss)
-                } else{
-                  fmt.Println(RV)
-  }
- arabicToRoman(50)
+calculate(100, 100, "-")
 }
