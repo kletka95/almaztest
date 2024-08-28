@@ -68,6 +68,11 @@ func calulate( a, b int, oper string) (int, error){
         return a - b, nil
  case "*":
         return a * b, nil
+ case "/":
+        if b == 0{
+          return 0, errors.New("Деление на 0 невозможно")
+          } 
+         return a / b, nil
  
 default:
         0, errors.New("Низвестный оператор")
@@ -77,5 +82,5 @@ default:
 
 func main() {
  
-calculate(100, 100, "-")
+
 }
