@@ -84,7 +84,7 @@ func main() {
   if err != nil{
          fmt.Print(err)
        }else {
-         fmt.print(a)}
+         fmt.Print(a)}
    calulate(100, 100, "/")
 
 }
