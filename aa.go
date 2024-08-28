@@ -1,5 +1,7 @@
 package main
-import "fmt"
+import ("fmt"
+        "error"
+        )
 
 
 
@@ -19,36 +21,36 @@ var romanArabic = map[string]int {
 }
 
 var arabicRoman = map[int]string {
-  1: "I",
-  2: "II",
-  3: "III",
-  4: "IV",
-  5: "V",
-  6: "VI",
-  7: "VII",
-  8: "VIII",
-  9: "IX",
-  10: "X",
+  "I",
+   "II",
+  "III",
+   "IV",
+  "V",
+   "VI",
+   "VII",
+  "VIII",
+   "IX",
+  "X",
   }
 
 
 
-func romanToArabic(roman string) (int) {
+func romanToArabic(roman string) (int, error) {
  if value, exists := romanArabic[roman]; exists {
-  return value
+  return value, nil
  }
-  return fmt.Println("Введенного римского числа не существует.")
+  return 0, errors.New("Введенного римского числа не существует.")
 }
 
 
-func arabicToRoman(arabic int) (int, string) {
+func arabicToRoman(arabic int) (string, error) {
  if arabic <= 0 {
-  return 0,  fmt.Println("римские числа должны быть больше нуля")
+  return " ",  errors.New("римские числа должны быть больше нуля")
  }
  if arabic > 100 {
-  return 0, fmt.Println("Значение не может быть больше ста")
+  return " ", errors.New("Значение не может быть больше ста")
  }
-  return arabic, ""
+  return arabicRoman[arabic], nil
 }
 
 
