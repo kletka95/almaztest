@@ -47,9 +47,11 @@ func romanToArabic(roman string) (int, error) {
 func arabicToRoman(arabic int) (string, error) {
  if arabic <= 0 {
   return " ",  errors.New("римские числа должны быть больше нуля")
+  fmt.Print(err)
  }
  if arabic > 100 {
   return " ", errors.New("Значение не может быть больше ста")
+  fmt.Print(err)
  }
   return arabicRoman[arabic], nil
 }
