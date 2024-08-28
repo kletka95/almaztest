@@ -80,11 +80,10 @@ default:
 
 
 func main() {
-  a, err := calulate(100, 100, "/")
+  a, err := calulate(100, 100, "*")
   if err != nil{
          fmt.Print(err)
        }else {
          fmt.Print(a)}
-   calulate(100, 100, "/")
 
 }
