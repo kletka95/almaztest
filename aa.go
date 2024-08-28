@@ -34,10 +34,9 @@ var arabicRoman = map[int]string {
 
 
 func romanToArabic(roman string) (int, error) {
- if value, exists := romanToArabicMap[roman]; exists {
+ if value, exists := romanArabic[roman]; exists {
   return value, nil
  }
- return 0, errors.New("некорректное римское число")
 }
 
 func main() {
