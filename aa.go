@@ -58,6 +58,7 @@ func main() {
   var roman string
   roman = "C"
   romanToArabic(roman)
-  arabicToRoman(11)
+  arabicToRoman(1122)
   arabicToRoman(5)
+  arabicToRoman(-1)
 }
