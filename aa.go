@@ -80,6 +80,6 @@ default:
 
 
 func main() {
-   calculate(100, 100, "/")
+   calulate(100, 100, "/")
 
 }
