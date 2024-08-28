@@ -37,6 +37,7 @@ func romanToArabic(roman string) (int, error) {
  if value, exists := romanArabic[roman]; exists {
   return value, nil
  }
+  return fmt.Println("False")
 }
 
 func main() {
