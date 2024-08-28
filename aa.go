@@ -36,6 +36,6 @@ func arabicToRoman(roman, string) (int) {
     }
 
 func main {
-  roman = "III"
+  var roman string = "III"
   arabicToRoman(roman)
 }
