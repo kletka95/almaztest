@@ -33,7 +33,7 @@ var arabicRoman = map[int]string {
 
 
 
-func romanToArabic(roman string) (int, error) {
+func arabicRoman(roman string) (int, error) {
  if value, exists := romanArabic[roman]; exists {
   return value, nil
  }
@@ -41,16 +41,15 @@ func romanToArabic(roman string) (int, error) {
 }
 
 
-func arabicToRoman(arabic int) {
-  if arabic <=0  {
-    return 400
-  if arabic > 100 {
-    return 400
-    }
-    
-  }
-    return arabicRoman[arabic], nil
-  }
+func arabicToRoman(arabic int) (string, error) {
+ if arabic <= 0 {
+  return "", fmt.Println("римские числа должны быть больше нуля")
+ }
+ if arabic > 100 {
+  return "", fmt.Println("Значение не может быть больше ста")
+ }
+ return arabicToRomanMap[arabic], nil
+}
 
 
 func main() {
