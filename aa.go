@@ -31,12 +31,9 @@ var arabicRoman = map[int]string {
 
 func arabicToRoman(roman, string) (int) {
    for value := range(romanArabic):
-    if roman == value:
-      fmt.Println(value)
-    else:
-      fmt.Println("False")
-
-  }
+    if roman == value{
+      fmt.Println(value)}
+    
 
 func main {
   roman = "III"
