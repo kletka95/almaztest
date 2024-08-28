@@ -1,10 +1,6 @@
 package main
 import "fmt"
-func main() {
-  var roman string
-  roman = "III"
-  arabicToRoman(roman)
-}
+
 
 
 
@@ -42,3 +38,9 @@ func arabicToRoman(roman, string) (int) {
     if roman == value{
       fmt.Println(value)}
     }
+
+func main() {
+  var roman string
+  roman = "III"
+  arabicToRoman(roman)
+}
