@@ -63,16 +63,16 @@ func arabicToRoman(arabic int) (string, error) {
 func calulate( a, b int, oper string) (int, error){
  switch oper {
          case: "+":
-                 return a+b, nil
+                 return a + b, nil
          case: "-":
-                 return a-b, nil
+                 return a - b, nil
          case: "*":
-                 return a*b, nil
+                 return a * b, nil
          case: "/":
             if b == 0{
                     return 0, errors.New("Деление на 0 невозможно")
                     } else{
-                 return a/b, nil
+                 return a / b, nil
                     }
          default:
                  0, errors.New("Низвестный оператор")
