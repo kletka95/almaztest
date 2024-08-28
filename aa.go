@@ -40,14 +40,16 @@ func romanToArabic(roman string) (int, error) {
  if value, exists := romanArabic[roman]; exists {
   return value, nil
  }
-  return 0, err := errors.New("Введенного римского числа не существует.")
+  err := errors.New("Введенного римского числа не существует.")
+  return 0, err
   fmt.Print(err)
 }
 
 
 func arabicToRoman(arabic int) (string, error) {
  if arabic <= 0 {
-  return " ",  err: = errors.New("римские числа должны быть больше нуля")
+  err := errors.New("римские числа должны быть больше нуля")
+  return " ",  err
   fmt.Print(err)
  }
  if arabic > 100 {
