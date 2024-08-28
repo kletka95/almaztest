@@ -61,7 +61,7 @@ func main() {
   arabicToRoman(1122)
   arabicToRoman(5)
   arabicToRoman(-1)
- if err != nil {
+ if errors != nil {
   panic(err)
  }
 
