@@ -1,6 +1,9 @@
 package main
 import "fmt"
 func main() {
+  var roman string
+  roman = "III"
+  arabicToRoman(roman)
 }
 
 
