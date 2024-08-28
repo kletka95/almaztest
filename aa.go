@@ -33,11 +33,12 @@ var arabicRoman = map[int]string {
 
 
 
-func arabicToRoman(roman, string) (int) {
-   for value := range(romanArabic){
-    if roman == value{
-      fmt.Println(value)}
-    }
+func romanToArabic(roman string) (int, error) {
+ if value, exists := romanToArabicMap[roman]; exists {
+  return value, nil
+ }
+ return 0, errors.New("некорректное римское число")
+}
 
 func main() {
   var roman string
