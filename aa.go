@@ -78,9 +78,10 @@ default:
         0, errors.New("Низвестный оператор")
 
         }
+        }
 
 
 func main() {
- 
+   calulate(100, 50, "-")
 
 }
