@@ -26,8 +26,8 @@ var arabicRoman = map[int]string {
   9: "IX",
   10: "X",
   }
-  }
-var exists bool
+
+
 
 func arabicToRoman(roman, string) (int) {
    for value := range(romanArabic):
