@@ -18,7 +18,7 @@ var romanArabic = map[string]int {
   "X": 10,
 }
 
-var arabicRoman = map[]string {
+var arabicRoman = map[int]string {
    "I",
    "II",
    "III",
