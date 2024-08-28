@@ -1,6 +1,6 @@
 package main
 import (
-       
+        "fmt"
         "errors"
         )
 
@@ -80,6 +80,11 @@ default:
 
 
 func main() {
+  a, err := calulate(100, 100, "/")
+  if err != nil{
+         fmt.Print(err)
+       }else {
+         fmt.print(a)}
    calulate(100, 100, "/")
 
 }
