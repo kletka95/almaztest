@@ -37,11 +37,21 @@ func romanToArabic(roman string) (int, error) {
  if value, exists := romanArabic[roman]; exists {
   return value, nil
  }
-  return fmt.Println("False")
+  return fmt.Println("Введенного римского числа не существует.")
 }
+func arabicToRoman(arabic int) (string, error) {
+  if value, exists =: arabicRoman[arabic]; exists {
+    return arabic, nil
+    
+  }
+    return fmt.Println("Введенного числа не существует")
+  }
+
 
 func main() {
   var roman string
   roman = "C"
   romanToArabic(roman)
+  arabicToRoman(11)
+  arabicToRoman(5)
 }
