@@ -42,5 +42,5 @@ func romanToArabic(roman string) (int, error) {
 func main() {
   var roman string
   roman = "III"
-  arabicToRoman(roman)
+  romanToArabic(roman)
 }
