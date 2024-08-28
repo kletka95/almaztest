@@ -71,9 +71,8 @@ func calulate( a, b int, oper string) (int, error){
  case "/":
         if b == 0{
           return 0, errors.New("Деление на 0 невозможно")
-          } else{
-             return a / b, nil
-                    }
+          } 
+         return a / b, nil
 default:
         0, errors.New("Низвестный оператор")
 
