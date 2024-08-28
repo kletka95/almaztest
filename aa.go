@@ -62,7 +62,7 @@ func main() {
   arabicToRoman(1122)
   arabicToRoman(5)
   arabicToRoman(-1)
- if errors != nil {
+ if error != nil {
   fmt.Println("NOO")
  }
 
