@@ -41,14 +41,14 @@ func romanToArabic(roman string) (int) {
 }
 
 
-func arabicToRoman(arabic int) (string) {
+func arabicToRoman(arabic int) string {
  if arabic <= 0 {
   return fmt.Println("римские числа должны быть больше нуля")
  }
  if arabic > 100 {
   return fmt.Println("Значение не может быть больше ста")
  }
-  return fmt.Println("OK")
+  return arabic
 }
 
 
