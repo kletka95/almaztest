@@ -46,7 +46,7 @@ func arabicToRoman(arabic int) (string, error) {
     return arabic, nil
     
   }
-    return fmt.Println("Введенного числа не существует")
+    return fmt.Println(arabic)
   }
 
 
