@@ -35,7 +35,7 @@ func arabicToRoman(roman, string) (int) {
       fmt.Println(value)}
     }
 
-func main {
-  var roman string = "III"
-  arabicToRoman(roman)
-}
+  func main {
+    var roman string = "III"
+    arabicToRoman(roman)
+  }
