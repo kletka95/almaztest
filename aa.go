@@ -34,8 +34,7 @@ func arabicToRoman(roman, string) (int) {
     if roman == value{
       fmt.Println(value)}
     }
-
-  func main() {
+ func main() {
     var roman string = "III"
     arabicToRoman(roman)
   }
