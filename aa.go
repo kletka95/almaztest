@@ -5,7 +5,14 @@ import (
         )
 
 
+func main() {
+  a, err := calulate(100, 0, "/")
+  if err != nil{
+         fmt.Println(err)
+       }else {
+         fmt.Println(a)}
 
+}
 
 //Даем два списка для перевода значений, один стринг интеджер, другой интеджер стринг
 var romanArabic = map[string]int {
@@ -79,11 +86,4 @@ default:
 }
 
 
-func main() {
-  a, err := calulate(100, 0, "/")
-  if err != nil{
-         fmt.Println(err)
-       }else {
-         fmt.Println(a)}
 
-}
