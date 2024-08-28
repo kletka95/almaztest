@@ -43,9 +43,9 @@ func romanToArabic(roman string) (int, error) {
 
 func arabicToRoman(arabic int) (string, error) {
   if arabic <=0  {
-    return fmt.Println("Не моет быть использовано значение меньше нуля")
+    return 400
   if arabic > 100 {
-    return fmt.Println("Не может быть использовано значение больше ста")
+    return 400
     }
     
   }
