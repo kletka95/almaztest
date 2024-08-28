@@ -33,7 +33,7 @@ var arabicRoman = map[int]string {
 
 
 
-func romanToArabic(roman string) (int, error) {
+func romanToArabic(roman string) (int) {
  if value, exists := romanArabic[roman]; exists {
   return value, nil
  }
