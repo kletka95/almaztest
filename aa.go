@@ -66,8 +66,7 @@ func main() {
   RV, err := arabicToRoman(5)
         if err != nil{
              fmt.Println(err)
-                }
-        else {
-             fmt.Println(RV)
+                } else{
+                  fmt.Println(RV)
   }
 }
