@@ -69,4 +69,5 @@ func main() {
                 } else{
                   fmt.Println(RV)
   }
+ arabicToRoman(50)
 }
