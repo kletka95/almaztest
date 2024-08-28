@@ -1,5 +1,11 @@
 package main
 import "fmt"
+func main() {
+   
+  }
+
+
+
 //Даем два списка для перевода значений, один стринг интеджер, другой интеджер стринг
 var romanArabic = map[string]int {
   "I": 1,
@@ -34,6 +40,3 @@ func arabicToRoman(roman, string) (int) {
     if roman == value{
       fmt.Println(value)}
     }
- func main() {
- 
-  }
