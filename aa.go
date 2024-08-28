@@ -74,9 +74,9 @@ func calulate( a, b int, oper string) (int, error){
           } 
          return a / b, nil 
 default:
-        0, errors.New("Низвестный оператор")
-        }
-        }
+   0, errors.New("Низвестный оператор")
+}
+}
 
 
 func main() {
