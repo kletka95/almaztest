@@ -18,17 +18,17 @@ var romanArabic = map[string]int {
   "X": 10,
 }
 
-var arabicRoman = map[int]string {
-  1: "I",
-  2: "II",
-  3: "III",
-  4: "IV",
-  5: "V",
-  6: "VI",
-  7: "VII",
-  8: "VIII",
-  9: "IX",
-  10: "X",
+var arabicRoman = map[]string {
+   "I",
+   "II",
+   "III",
+   "IV",
+   "V",
+  "VI",
+  "VII",
+   "VIII",
+   "IX",
+   "X",
   }
 
 
@@ -48,7 +48,7 @@ func arabicToRoman(arabic int) (string) {
  if arabic > 100 {
   return fmt.Println("Значение не может быть больше ста")
  }
- return fmt.Println("OK")
+  return fmt.Println("OK")
 }
 
 
