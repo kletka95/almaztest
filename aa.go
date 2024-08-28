@@ -51,7 +51,8 @@ func arabicToRoman(arabic int) (string, error) {
   fmt.Print(err)
  }
  if arabic > 100 {
-  return " ", err := errors.New("Значение не может быть больше ста")
+  err := errors.New("Значение не может быть больше ста")
+  return " ", err
   fmt.Print(err)
  }
   return arabicRoman[arabic], nil
