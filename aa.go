@@ -62,9 +62,8 @@ func arabicToRoman(arabic int) (string, error) {
 
 
 func main() {
-  var roman string
-  roman = "C"
-  value, err := arabicToRoman(5)
+ 
+  err := arabicToRoman(5)
         if err != nil{
              fmt.Println(err)
                 }
