@@ -41,7 +41,7 @@ func romanToArabic(roman string) (int, error) {
 }
 
 
-func arabicToRoman(arabic int) (string, error) {
+func arabicToRoman(arabic int) {
   if arabic <=0  {
     return 400
   if arabic > 100 {
