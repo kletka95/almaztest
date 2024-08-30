@@ -28,11 +28,11 @@ import "fmt"
 	10: "X",
 	}
 
-func romToArab(rom string) int {
-	if val, ok := m(rom); ok{
-	    return val
+func romToArab(rom string) (int, string) {
+	if val, ok := m[rom]; ok{
+	    return val, ""
 	}
-	return 0
+	return 0, "Ошибка"
 }
 
 func main() {
