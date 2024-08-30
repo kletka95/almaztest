@@ -66,5 +66,5 @@ func main() {
   var c, s = calculate(5, 6, "+")
   fmt.Println(c, s)
   var c, s = calculate(5, 6, "no")
-  fmt(Println(c, s)
+  fmt.Println(c, s)
 }
