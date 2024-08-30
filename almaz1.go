@@ -34,9 +34,16 @@ func romToArab(rom string) (int) {
 	}
 	return 0
 }
+func ArabicToRom(ara int) string{
+     if val, ok := m2[ara]; ok{
+	    return val
+	     }
+	return "Числа нет"
+}
 
 func main() {
   var a = romToArab("VI")
   fmt.Println(a)
-
+  var b = ArabicToRom(2)
+  fmt.Println(b)
 }
