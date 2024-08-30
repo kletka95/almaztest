@@ -30,7 +30,8 @@ import "fmt"
 func main() {
   k = 5
   for key, value =: range m{
-	if k == value:
+	if k == value{
 	  fmt.Println(key)
+		}
 	  }
 }
