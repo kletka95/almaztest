@@ -27,11 +27,11 @@ import "fmt"
 	9: "IX",
 	10: "X",
 	}
-func romToArab(rom string) {
+func romToArab(rom string)(int) {
 	if val, ok := m(rom); ok{
 	    fmt.Println(val)
 		} else {
-	    fmt.Println("Значение не найдено")
+	    fmt.Println(0)
 		}
 }
 
