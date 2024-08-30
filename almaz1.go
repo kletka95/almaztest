@@ -27,8 +27,10 @@ import "fmt"
 	9: "IX",
 	10: "X",
 	}
-func main() {	
-  for key, value := range m {
-	fmt.Println("Key", key, "Value", value)
-  }
+func main() {
+  k = 5
+  for k := 5; n != nil; n=n.Next{
+	if m[k]{
+	 fmt.Println("Print")
+	 break}		  
 }
