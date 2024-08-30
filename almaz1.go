@@ -52,10 +52,9 @@ func calculate (a, b int, oper string)(int, string){
 	    return a*b, ""
 	case  "/":
 		if b == 0{
-		   reutrn 0, "На 0 делить нельзя"
+		   return 0, "На 0 делить нельзя"
 			}
 	    return a+b, ""
-		
 	default:
 	    return 0, "Передано некорректно значение"
 		}
