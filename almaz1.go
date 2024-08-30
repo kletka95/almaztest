@@ -27,6 +27,12 @@ import "fmt"
 	9: "IX",
 	10: "X",
 	}
-func main() {
-  fmt.Println(m["C"])
+func main(){
+ var k string = "V"
+  for key, values := range m{
+	if k == key {
+	   fmt.Println(values)
+	} else{
+	    fmt.Println("0")   
+	  }
 }
