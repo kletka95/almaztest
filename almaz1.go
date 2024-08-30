@@ -42,7 +42,7 @@ func ArabicToRom(ara int) string{
 }
 
 func calculate (a, b int, oper string)(int){
-   var oper string
+  
 	switch oper {
 	case  "+":
 	    return a+b
