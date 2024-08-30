@@ -31,11 +31,11 @@ import "fmt"
 func romToArab(rom string) int {
 	if val, ok := m(rom); ok{
 	    return val
-		}
+	}
 	return 0
 }
 
-func main(){
+func main() {
   var a = romToArab("VI")
   fmt.Println(a)
 
