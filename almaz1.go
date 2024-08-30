@@ -29,9 +29,8 @@ import "fmt"
 	}
 func main() {
   k = 5
-  for k := 5; n != nil; n=n.Next{
-	if m[k]{
-	 fmt.Println("Print")
-	 break}	
-      fmt.Prinln(k.value)
+  for key, value =: range m{
+	if k == value:
+	  fmt.Println(key)
+	  }
 }
