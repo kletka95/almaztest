@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
- var m map[string]int = {
+ var m = map[string]int = {
 	"I": 1,
 	"II": 2,
 	"III": 3,
@@ -15,7 +15,7 @@ import "fmt"
 	"X": 10,
  }
  
- var m2 map[int]string = {
+ var m2 =  map[int]string = {
 	1: "I",
 	2: "II",
 	3: "III",
