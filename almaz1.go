@@ -1,166 +1,33 @@
 package main
-import (
- "errors"
- "fmt"
- "strings"
- "os"
- "bufio"
-)
 
+import "fmt"
 
-func containsAnyLetters(s string, letters []rune) bool {
- for _, r := range s {
-  for _, letter := range letters {
-   if r == letter {
-    return false
-   }
-  }
+ var m map[string]int = {
+	"I": 1,
+	"II": 2,
+	"III": 3,
+	"IV": 4,
+	"V": 5,
+	"VI": 6,
+	"VII": 7,
+	"VIII": 8,
+	"IX": 9,
+	"X": 10,
  }
- return true
-}
-
-
-// Функция для перевода римских цифр в арабские
-func romanToArabic(roman string) (int, error) {
- romanValues := map[byte]int{
-  'I': 1,
-  'V': 5,
-  'X': 10,
-  'L': 50,
-  'C': 100,
-  'D': 500,
-  'M': 1000,
- }
-
- total := 0
- prevValue := 0
-
- for i := len(roman) - 1; i >= 0; i-- {
-  value := romanValues[roman[i]]
-  if value < prevValue {
-   total -= value
-  } else {
-   total += value
-  }
-  prevValue = value
- }
-
- return total, nil
-}
-
-// Функция для перевода арабских цифр в римские
-func arabicToRoman(arabic int) (string, error) {
- if arabic <= 0 || arabic > 3999 {
-  return "", errors.New("value out of range")
- }
-
- romanNumerals := []struct {
-  Value int
-  Symbol string
- }{
-  {1000, "M"},
-  {900, "CM"},
-  {500, "D"},
-  {400, "CD"},
-  {100, "C"},
-  {90, "XC"},
-  {50, "L"},
-  {40, "XL"},
-  {10, "X"},
-  {9, "IX"},
-  {5, "V"},
-  {4, "IV"},
-  {1, "I"},
- }
-
- var result strings.Builder
- for _, numeral := range romanNumerals {
-  for arabic >= numeral.Value {
-   result.WriteString(numeral.Symbol)
-   arabic -= numeral.Value
-  }
- }
-
- return result.String(), nil
-}
-
-// Функция для обработки выражений и выполнения операций
-func calculate(input string) (string, error) {
- var a, b int
- var operator string
-
- // Попробуем обработать как арабские цифры
- _, err := fmt.Sscanf(input, "%d %s %d", &a, &operator, &b)
- if err != nil {
-  // Если не удалось, попробуем как римские
-  var romanA, romanB string
-  _, err = fmt.Sscanf(input, "%s %s %s", &romanA, &operator, &romanB)
-  if err != nil {
-   return "", errors.New("invalid input")
-  }
-
-  a, err = romanToArabic(romanA)
-  if err != nil {
-   return "", err
-  }
-  b, err = romanToArabic(romanB)
-  if err != nil {
-   return "", err
-  }
- }
-
- var result int
- switch operator {
- case "+":
-  result = a + b
- case "-":
-  result = a - b
- case "*":
-  result = a * b
- case "/":
-  if b == 0 {
-   return "", errors.New("division by zero")
-  }
-  result = a / b
- default:
-  return "", errors.New("unsupported operation")
- }
-
- if strings.ContainsAny(input, "IVXLCDM") {
-  // Если входные данные содержали римские цифры, возвращаем результат в римских
-  return arabicToRoman(result)
- }
-
- return fmt.Sprintf("%d", result), nil
-}
-
-func main() {
-letters := []rune{'X', 'L', 'M', 'C', 'D'}
-var i int
-var c int
-var d bool
- reader := bufio.NewReader(os.Stdin)
- fmt.Println("Ввести")
- text, _ := reader.ReadString('\n')
- text1 := strings.ReplaceAll(text, "+", ":")
- text2 := strings.ReplaceAll(text1, " ", "")
- fmt.Sscanf(text2, "%d:%d", &i, &c)
- input := text
- result, err := calculate(input)
- switch d{
-     case i < 11:
-        fmt.Println("NO")
-     case c < 11: 
-        fmt.Println("NO2")
-     case containsAnyLetters(text, letters):
-        fmt.Println("Строка больше 10")
-     
-     default:  if err != nil {
-         fmt.Println("Error:", err)
-            return
-         }
-          fmt.Println("Result:", result)
-           }
-
-}
  
+ var m2 map[int]string = {
+	1: "I",
+	2: "II",
+	3: "III",
+	4: "IV",
+	5: "V",
+	6: "VI",
+	7: "VII",
+	8: "VIII",
+	9: "IX",
+	10: "X",
+	}
+	
+  for key, value := range m{
+	fmt.Println("Key", key, "Value", value)
+	}
