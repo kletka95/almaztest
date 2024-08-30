@@ -29,10 +29,6 @@ import "fmt"
 	}
 func main(){
  var k string = "V"
-  for key, values := range m{
-	if k == key {
-	   fmt.Println(values)
-	} else{
-	    fmt.Println("0")   
-	  }
+ if val, ok := m[k]; ok{
+	 fmt.Println(val)
 }
