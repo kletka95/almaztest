@@ -28,10 +28,5 @@ import "fmt"
 	10: "X",
 	}
 func main() {
-  k = 5
-  for key, value =: range m{
-	if k == value{
-	  fmt.Println(key)
-		}
-	  }
+  fmt.Println(m["VII"]
 }
