@@ -30,9 +30,9 @@ import "fmt"
 
 func romToArab(rom string) (int, string) {
 	if val, ok := m[rom]; ok{
-	    return val, ""
+	    return val
 	}
-	return 0, "Ошибка"
+	return 0
 }
 
 func main() {
