@@ -63,6 +63,7 @@ func main() {
   fmt.Println(a)
   var b = ArabicToRom(512)
   fmt.Println(b)
-  var c = calculate(5, 6, "+")
-  fmt.Println(c)
+  var c, s = calculate(5, 6, "+")
+  fmt.Println(c, s)
+  var c, s = calculate(5, 6, "no")
 }
