@@ -41,20 +41,20 @@ func ArabicToRom(ara int) string{
 	return "Числа нет"
 }
 
-func calculate (a, b int, oper string)(int){
+func calculate (a, b int, oper string)(int, string){
   
 	switch oper {
 	case  "+":
-	    return a+b
+	    return a+b, ""
 	case  "-":
-	    return a-b
+	    return a-b, ""
 	case  "*":
-	    return a*b
+	    return a*b, ""
 	case  "/":
-	    return a+b
+	    return a+b, ""
 		
 	default:
-	    return 0
+	    return 0, "ss"
 		}
 }
 
