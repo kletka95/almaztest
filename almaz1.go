@@ -32,5 +32,6 @@ func main() {
   for k := 5; n != nil; n=n.Next{
 	if m[k]{
 	 fmt.Println("Print")
-	 break}		  
+	 break}	
+      fmt.Prinln(k.value)
 }
