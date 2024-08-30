@@ -45,6 +45,12 @@ func calculate {a, b int, oper string)(int){
 	switch oper["+", "-", "*" "/"] {
 	case oper "+":
 	    return a+b
+	case oper "-":
+	    return a-b
+	case oper "*":
+	    return a*b
+	case oper "/":
+	    return a+b
 		}
 }
 
