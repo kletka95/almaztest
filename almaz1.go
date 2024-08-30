@@ -71,4 +71,6 @@ func main() {
   fmt.Println(c, s)
   c, s = calculate(5, 6, "no")
   fmt.Println(s)
+  c, s = calculate(5, 0, "/")
+  fmt.Println(s)
 }
