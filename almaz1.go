@@ -27,10 +27,12 @@ import "fmt"
 	9: "IX",
 	10: "X",
 	}
+
 func romToArab(rom string) int {
 	if val, ok := m(rom); ok{
 	    return val
 		}
+	return 0
 }
 
 func main(){
