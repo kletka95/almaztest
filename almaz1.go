@@ -27,17 +27,14 @@ import "fmt"
 	9: "IX",
 	10: "X",
 	}
-func romToArab(rom string)(int, string) {
+func romToArab(rom string) int {
 	if val, ok := m(rom); ok{
-	    return val, ""
-		} else {
-		return 0, ""
+	    return val
 		}
 }
 
 func main(){
-  romToArab("VI")
-  romToArab("VII")
-  romToArab("C")
+  var a = romToArab("VI")
+  fmt.Println(a)
 
 }
