@@ -28,7 +28,7 @@ import "fmt"
 	10: "X",
 	}
 
-func romToArab(rom string) (int, string) {
+func romToArab(rom string) (int) {
 	if val, ok := m[rom]; ok{
 	    return val
 	}
