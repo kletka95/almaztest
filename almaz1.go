@@ -41,7 +41,7 @@ func ArabicToRom(ara int) string{
 	return "Числа нет"
 }
 
-func calculate {a, b int, oper string)(int){
+func calculate (a, b int, oper string)(int){
    var oper string
 	switch oper {
 	case  "+":
