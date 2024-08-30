@@ -28,7 +28,7 @@ import "fmt"
 	10: "X",
 	}
 func main(){	
-  for key, value := range m{
+  for key, value := range m {
 	fmt.Println("Key", key, "Value", value)
-	}
+  }
 }
