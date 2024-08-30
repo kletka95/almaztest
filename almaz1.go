@@ -53,6 +53,8 @@ func calculate (a, b int, oper string)(int){
 	case  "/":
 	    return a+b
 		}
+	default:
+	    return 0
 }
 
 func main() {
