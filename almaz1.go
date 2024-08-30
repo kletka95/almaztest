@@ -54,7 +54,7 @@ func calculate (a, b int, oper string)(int, string){
 	    return a+b, ""
 		
 	default:
-	    return 0, "ss"
+	    return 0, "Передано некорректно значение"
 		}
 }
 
@@ -68,5 +68,5 @@ func main() {
   c, s = calculate(5, 6, "+")
   fmt.Println(c, s)
   c, s = calculate(5, 6, "no")
-  fmt.Println(c, s)
+  fmt.Println(s)
 }
