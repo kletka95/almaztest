@@ -63,8 +63,11 @@ func calculate (a, b int, oper string)(int, string){
 func parse (input string) (string){
 	operaters := []string{"+", "-", "/", "*"}
 	var operator string
-	if _, operator := operaters, ok{
-		return operator
+	for _, o := range operaters {
+		if strings.Contains(input, o) {
+		   operator = o
+		   break
+			}
 
 		}
 	return "Передан неизвестный оператор"
@@ -83,7 +86,6 @@ func main() {
 	var input string
 	fmt.Print("Введите выражение: ")
 	fmt.Scanln(&input)
-
         result, c := parse(input)
    	
 }
