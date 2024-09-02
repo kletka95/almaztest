@@ -68,7 +68,6 @@ func parse (input string) (string){
 		   operator = o
 		   break
 			}
-
 		}
 	return "Передан неизвестный оператор"
 parts := strings.Split(input, operator)
@@ -77,8 +76,6 @@ parts := strings.Split(input, operator)
         a, b := 
      strings.TrimSpace(parts[0])
      strings.TrimSpace(parts[1])
-
-
 }
 
 
