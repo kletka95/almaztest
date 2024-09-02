@@ -1,6 +1,7 @@
 package main
 
-import "fmt"
+import ("fmt"
+	"strings")
 
  var m = map[string]int{
 	"I": 1,
@@ -59,18 +60,30 @@ func calculate (a, b int, oper string)(int, string){
 	    return 0, "Передано некорректно значение"
 		}
 }
+func parse (input string) (string){
+	operaters := []string{"+", "-", "/", "*"}
+	var operator string
+	if _, operator := operaters, ok{
+		return operator
+
+		}
+	return "Передан неизвестный оператор"
+parts := strings.Split(input, operator)
+	if len(parts) != 2 {
+		return "Некорректный ввод"
+        a, b := 
+     strings.TrimSpace(parts[0])
+     strings.TrimSpace(parts[1])
+
+
+}
+
 
 func main() {
-  var a = romToArab("VI")
-  fmt.Println(a)
-  var b = ArabicToRom(512)
-  fmt.Println(b)
-  var c int
-  var s string
-  c, s = calculate(5, 6, "+")
-  fmt.Println(c, s)
-  c, s = calculate(5, 6, "no")
-  fmt.Println(s)
-  c, s = calculate(5, 0, "/")
-  fmt.Println(s)
+	var input string
+	fmt.Print("Введите выражение: ")
+	fmt.Scanln(&input)
+
+        result, c := parse(input)
+   	
 }
