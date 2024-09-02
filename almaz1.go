@@ -60,30 +60,20 @@ func calculate (a, b int, oper string)(int, string){
 	    return 0, "Передано некорректно значение"
 		}
 }
-func parse (input string) (string){
-	operaters := []string{"+", "-", "/", "*"}
-	var operator string
-	for _, o := range operaters {
-		if strings.Contains(input, o) {
-		   operator = o
-		   break
-			}
-		}
-	return "Передан неизвестный оператор"
-parts := strings.Split(input, operator)
-	if len(parts) != 2 {
-		return "Некорректный ввод"}
-        a, b := 
-     strings.TrimSpace(parts[0])
-     strings.TrimSpace(parts[1])
-}
+func parse (input string) (string)
+	var operators := map[string]{
+		"+",
+		"-",
+		"/",
+		"*"}
+	if _, operator := operators[op]; operator{
+	    return operator
+	}
+
 
 
 func main() {
-	var input string
-	fmt.Print("Введите выражение: ")
-	fmt.Scanln(&input)
-        result := parse(input)
-	fmt.Println(relust)
-   	
+	var a string
+	a := parse("+")
+	b := parse("fsd") 
 }
