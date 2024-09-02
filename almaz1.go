@@ -63,7 +63,7 @@ func calculate (a, b int, oper string)(int, string){
 func parse (input string) (string){
 	var operators = map[string]bool{
 		"+": true,
-		"-",: true,
+		"-": true,
 		"/": true,
 		"*": true,
 	}
