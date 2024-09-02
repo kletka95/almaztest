@@ -61,7 +61,7 @@ func calculate (a, b int, oper string)(int, string){
 		}
 }
 func parse (input string) (string){
-	var operators := map[string]{
+	var operators = map[string]{
 		"+",
 		"-",
 		"/",
@@ -74,6 +74,6 @@ func parse (input string) (string){
 
 func main() {
 	var a string
-	a = parse("+")
-	b = parse("fsd") 
+	a := parse("+")
+	b := parse("fsd") 
 }
