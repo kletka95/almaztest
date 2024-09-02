@@ -77,6 +77,7 @@ func parse (input string) (string){
 
 func main() {
 	var a string
+	var b string
 	a := parse("+")
 	b := parse("fsd") 
 }
