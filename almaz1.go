@@ -69,9 +69,9 @@ func parse (input string) (string){
 	}
 	if _, operator := operators[op]; operator{
 	    return operator
-	} else {
-	    return "Некорретный ввод оператора"
-		}
+	} 
+	return "Некорретный ввод оператора"
+		
 }
 
 
