@@ -74,6 +74,6 @@ func parse (input string) (string){
 
 func main() {
 	var a string
-	a := parse("+")
-	b := parse("fsd") 
+	a = parse("+")
+	b = parse("fsd") 
 }
