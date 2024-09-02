@@ -61,17 +61,17 @@ func calculate (a, b int, oper string)(int, string){
 		}
 }
 func parse (input string) (string){
-	var operators = map[string]{
-		"+",
-		"-",
-		"/",
-		"*"
+	var operators = map[string]bool{
+		"+": true,
+		"-",: true
+		"/": true,
+		"*": true,
 	}
 	if _, operator := operators[op]; operator{
 	    return operator
 	} 
 	return "Некорретный ввод оператора"
-		
+
 }
 
 
@@ -80,4 +80,6 @@ func main() {
 	var b string
 	a := parse("+")
 	b := parse("fsd") 
+	fmt.Println(a)
+	fmt.Println(b)
 }
