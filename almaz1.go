@@ -72,7 +72,7 @@ func parse (input string) (string){
 	return "Передан неизвестный оператор"
 parts := strings.Split(input, operator)
 	if len(parts) != 2 {
-		return "Некорректный ввод"
+		return "Некорректный ввод"}
         a, b := 
      strings.TrimSpace(parts[0])
      strings.TrimSpace(parts[1])
@@ -83,6 +83,7 @@ func main() {
 	var input string
 	fmt.Print("Введите выражение: ")
 	fmt.Scanln(&input)
-        result, c := parse(input)
+        result := parse(input)
+	fmt.Println(relust)
    	
 }
