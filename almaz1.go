@@ -60,7 +60,7 @@ func calculate (a, b int, oper string)(int, string){
 	    return 0, "Передано некорректно значение"
 		}
 }
-func parse (input string) (string)
+func parse (input string) (string){
 	var operators := map[string]{
 		"+",
 		"-",
@@ -69,7 +69,7 @@ func parse (input string) (string)
 	if _, operator := operators[op]; operator{
 	    return operator
 	}
-
+}
 
 
 func main() {
